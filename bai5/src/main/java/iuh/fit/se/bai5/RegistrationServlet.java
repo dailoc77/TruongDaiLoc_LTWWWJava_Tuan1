@@ -5,6 +5,9 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
+/**
+ * @author DAILOC
+ */
 @WebServlet("/registration")
 public class RegistrationServlet extends HttpServlet {
 
