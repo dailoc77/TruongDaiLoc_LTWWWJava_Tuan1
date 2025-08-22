@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <!-- Khai báo context-param -->
+    <context-param>
+        <param-name>appTitle</param-name>
+        <param-value>Ứng dụng Servlet Demo</param-value>
+    </context-param>
+
+    <!-- Khai báo servlet và init-param -->
+    <servlet>
+        <servlet-name>helloServlet</servlet-name>
+        <servlet-class>iuh.fit.se.bai4.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>greeting</param-name>
+            <param-value>Xin chào từ init-param!</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloServlet</servlet-name>
+        <url-pattern>/hello-servlet</url-pattern>
+    </servlet-mapping>
+</web-app>
